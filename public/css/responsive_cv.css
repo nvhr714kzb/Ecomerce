@@ -1,0 +1,65 @@
+/* Ipad ngang (1024 x 768) */
+
+@media screen and (max-width: 792px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+
+/* Ipad dá»c (768 x 1024) */
+
+@media screen and (max-width: 768px) {
+    .thumb-cv {
+        display: none;
+    }
+    .content-right {
+        background: white;
+    }
+    #wrapper {
+        margin: 0 auto;
+    }
+    .content-one {
+        display: none;
+    }
+    .content-two {
+        display: block;
+        padding-top: 25px;
+    }
+    .study {
+        padding-top: 25px;
+    }
+    .block {
+        line-height: 45px;
+    }
+    .content-left {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+
+/* Tablet nhá» (480 x 640) */
+
+@media screen and (max-width: 480px) {}
+
+
+/* Iphone (480 x 640) */
+
+@media screen and (max-width: 414px) {
+    .link-access {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 70%;
+        display: inline-block;
+    }
+}
+
+
+/* smart phone nhá» */
+
+@media screen and (max-width: 240px) {}

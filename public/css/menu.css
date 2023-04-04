@@ -1,0 +1,138 @@
+#wp-menu {
+    width: 300px;
+    position: absolute;
+    top: -20px !important;
+    left: -300px;
+    transition: left 0.3s;
+    background-color: #f1f6f9;
+    z-index: 100;
+}
+
+#site.open-menu #wp-menu {
+    left: 0;
+}
+
+
+/* ===========BLOCK SCROLL=========== */
+
+html {
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* z-index: 100; */
+}
+
+#menu-head {
+    position: relative;
+}
+
+#menu-title {
+    color: black;
+    text-align: center;
+}
+
+#icon-menu {
+    position: absolute;
+    top: 6px;
+    right: -38px;
+    font-size: 30px;
+    padding: 4px;
+    border: 1px solid #f1f6f9;
+    color: #f1f6f9;
+}
+
+#icon-menu:hover {
+    color: #FFC312;
+}
+
+
+/* ====Fix scroll=== */
+
+#site.open-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100
+}
+
+#wp-menu #menu-body .list-menu {
+    height: 100vh;
+    overflow: scroll;
+}
+
+#wp-menu .item {
+    /* border-top: 1px solid #131921; */
+}
+
+#wp-menu .item .btn {
+    position: relative;
+    display: block;
+    padding: 16px 20px;
+    background-color: #131921;
+    color: white;
+    cursor: initial;
+}
+
+#wp-menu .item .btn::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    left: 20px;
+    bottom: -7px;
+    background-color: #131921;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+#wp-menu .item .btn i {
+    margin-right: 10px;
+}
+
+#wp-menu .item .smenu {
+    background-color: white;
+    margin: 0;
+    transition: max-height 0.3s;
+    /* temp comment */
+    /* max-height: 0px; */
+    /* overflow: hidden; */
+}
+
+#wp-menu .item .smenu a {
+    display: block;
+    position: relative;
+    /* margin: 4px 0; */
+    padding: 16px 26px;
+    color: black;
+    font-size: 16px;
+}
+
+#wp-menu .item .smenu a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #131921;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#wp-menu .item .smenu li:hover a {
+    background-color: #e8e8e8;
+    text-decoration: none;
+}
+
+#wp-menu .item .smenu a:hover::before {
+    opacity: 1;
+}
+
+#wp-menu .item.open>.smenu {
+    max-height: 500px;
+    /* display: block; */
+}

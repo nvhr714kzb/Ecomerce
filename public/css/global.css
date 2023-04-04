@@ -1,0 +1,58 @@
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.color-red {
+    color: red;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}

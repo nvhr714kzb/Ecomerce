@@ -1,0 +1,14 @@
+/* ::-webkit-scrollbar {
+    width: 0;
+} */
+
+#progress-ball {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    box-shadow: 0 0 10px orange;
+}

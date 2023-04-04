@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# For the primary categories
+RewriteRule ^shop/(coffee|goodies)/?$ index.php?mod=product&act=shop&type=$1
+RewriteRule ^shop/sales/?$ index.php?mod=sales&act=sales
+RewriteRule ^category/id/3/General-Web-Security index.php?mod=page&act=category&cat_id=3
+RewriteRule ^page/id//4/PHP-Security index.php?mod=page&act=page&id=4
+RewriteRule ^browse/(coffee|goodies)/([A-Za-z\+\-]+)/([0-9]+)/?$ index.php?mod=product&act=browse&type=$1&category=$2&id=$3
+
+RewriteRule ^phone/([A-Za-z\+\-]+)/([0-9]+)/?$ index.php?mod=product&act=browse&catId=$2
+RewriteRule ^phone/([A-Za-z\+\-]+)/([0-9]+)/([0-9]+)/?$ index.php?mod=product&act=browse&catId=$2&page=$3
+
+RewriteRule ^phone/detail/([A-Za-z0-9\+\-]+)/([0-9]+)/?$ index.php?mod=product&act=detail_product&id=$2
+
+RewriteRule ^post/?$ index.php?mod=post&act=home
+RewriteRule ^post/([A-Za-z0-9\+\-]+)/([0-9]+)/?$ index.php?mod=post&act=detail_post&postId=$2
+RewriteRule ^post/product/([A-Za-z0-9\+\-]+)/([0-9]+)/?$ index.php?mod=post&act=list_post_by_product&pId=$2
+RewriteRule ^post/new-product/?$ index.php?mod=post&act=list_posts_new_product
+
+
+
+RewriteRule ^cart/?$ index.php?mod=cart&act=cart
+RewriteRule ^wishlist/?$ index.php?mod=cart&act=wishlist
+
+
+
+
+RewriteRule ^voucher/?$ index.php?mod=discount_code&act=list_discount_codes
+RewriteRule ^voucher/([0-9]+)/?$ index.php?mod=discount_code&act=list_discount_codes&page=$1
+
+RewriteRule ^sale/?$ index.php?mod=sales&act=sales
+
+
+
+</IfModule>

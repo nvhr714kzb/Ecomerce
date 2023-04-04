@@ -1,0 +1,787 @@
+div.error {
+    color: red;
+    font-size: 13px;
+}
+
+#header {
+    background-color: #343a40;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#home {
+    margin-right: 20px;
+}
+
+#home i {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* ====================Avatar================== */
+
+.user-info {
+    position: relative;
+}
+
+.user-info .avatar {
+    display: inline-block;
+    width: 40px;
+    /* vertical-align: middle; */
+}
+
+.user-info .name {
+    color: #fff;
+}
+
+.user-info:hover {
+    cursor: pointer;
+}
+
+.user-info:hover .drop-down-menu {
+    display: block;
+}
+
+.user-info .drop-down-menu:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.user-info .drop-down-menu a {
+    text-decoration: none;
+}
+
+.user-info .drop-down-menu a:hover {
+    color: #ffa62b;
+}
+
+.user-info .drop-down-menu {
+    position: absolute;
+    top: 39px;
+    left: -1px;
+    padding: 10px 10px;
+    width: 170px;
+    background-color: #fff;
+    border-radius: 2px;
+    z-index: 1;
+    display: none;
+}
+
+#content-wp {
+    margin-bottom: 20px;
+}
+
+
+/* ===========================SIDEBAR====================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#sidebar {
+    width: 20%;
+}
+
+#sidebar-menu a {
+    position: relative;
+    color: #333;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#sidebar-menu span:first-child {
+    margin-right: 10px;
+}
+
+#sidebar-menu span:last-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 15px;
+}
+
+#sidebar-menu .nav-item:hover>a {
+    background-color: #d2d3c9;
+}
+
+#sidebar-menu>.nav-item.active>.nav-link {
+    background: #d2d3c9;
+}
+
+#sidebar-menu>.nav-item .sub-menu {
+    display: none;
+}
+
+#sidebar #sidebar-menu .nav-item.active a .arrow {
+    transform: translateX(-37%) translateY(10%) rotate(90deg);
+}
+
+#sidebar-menu a {
+    text-decoration: none;
+}
+
+.sub-menu .nav-item {
+    background-color: #eeeeee;
+}
+
+.sub-menu .nav-item:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+/* ==========================CARD=================== */
+
+#list-card {
+    display: flex;
+    justify-content: space-between;
+    color: #fff !important;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    width: 25%;
+    padding-right: 65px;
+    background-image: linear-gradient( to right, rgb(43, 107, 202), rgb(13, 89, 139));
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card .icon-card {
+    position: absolute;
+    right: 9px;
+    top: 23px;
+}
+
+.card-head {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.cart-title {
+    margin-bottom: 0.75rem;
+    font-size: 20px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+
+/* ====================CHART================ */
+
+#chart {
+    background-color: #dff9fb;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =================================Add other product===================== */
+
+input[type='text'] {
+    width: 100%;
+}
+
+.field:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type='submit'],
+.section .section-add,
+.section .section-list {
+    background-color: #ffb916;
+    font-size: 11px;
+    padding: 8px 8px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    outline: none;
+}
+
+input[type='submit']:disabled {
+    cursor: default;
+    background-color: #bdc3c7;
+}
+
+input[type='submit']:not(:disabled):hover,
+.section .section-add:hover,
+.section .section-list:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#title-action {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+}
+
+legend {
+    font-size: 15px;
+}
+
+
+/* ===========================CONTENT====================== */
+
+#content {
+    width: 80%;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#content:after {
+    /* background-color: #f4f4f4;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1; */
+}
+
+#footer {
+    height: 70px;
+    background-color: #150485;
+}
+
+
+/* =========================TABLE================================ */
+
+#title-name {
+    display: inline-block;
+    font-size: 30px;
+}
+
+#title-action {
+    display: inline-block;
+}
+
+fieldset legend {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    /* box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.8), 2px 2px 2px rgba(0, 0, 0, 0.8); */
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.block {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+table tr:hover {
+    background-color: #f0a500;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    visibility: visible;
+}
+
+table tr td .actions button[type='submit'] {
+    border: none;
+    outline: none;
+    color: #f1f6f9;
+    padding: 5px;
+    background-color: #9ba4b4;
+    border-radius: 2px;
+}
+
+table td input.category,
+table td textarea.description {
+    width: 100%;
+}
+
+table td input[type='submit'] {
+    background-color: #c8d6e5;
+}
+
+table td input[type='submit']:hover {
+    background-color: #f1c40f;
+}
+
+table tr:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tr:nth-of-type(odd) {
+    /* background: #e8e4e1; */
+}
+
+table tr:nth-of-type(even) {
+    /* background: #d9e4dd; */
+}
+
+table td {
+    /* padding: 10px 0; */
+}
+
+table th {
+    text-align: center;
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+}
+
+
+/* ----------------FOR HOVER------------------ */
+
+#table .actions {
+    visibility: hidden;
+}
+
+
+/* =============================FILTER===================== */
+
+#filter-wp li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#filter-wp li:hover a {
+    text-decoration: none;
+}
+
+#filter-wp li a {
+    display: inline-block;
+}
+
+#filter-wp li.active a {
+    color: #133b5c;
+}
+
+
+/* ========================PAGGING======================== */
+
+#pagging a {
+    display: inline-block;
+    padding: 8px 13px;
+    background-color: #eeeeee;
+    color: #212121;
+    border: 1px solid #e8e8e8;
+}
+
+#pagging a:not(:last-child) {
+    margin-right: 5px;
+}
+
+#pagging a[href] {
+    background-color: #cdc9c3;
+}
+
+#pagging a[href]:hover {
+    text-decoration: none;
+}
+
+
+/* =======================table================ */
+
+
+/* =====================Action====================== */
+
+#filter-wp {
+    margin-bottom: 10px;
+}
+
+#action-wp {
+    margin-bottom: 10px;
+}
+
+#actions select {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+}
+
+
+/* ======================chat====================== */
+
+.start-chat {
+    border: none;
+    outline: none;
+    background: #2d6187;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+
+.start-chat i {
+    margin-right: 5px;
+}
+
+.start-chat:hover {
+    background: linear-gradient(to right top, #4375eb, #082e86);
+    outline: none;
+}
+
+#chat-box .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: #0097e6;
+    background-color: none;
+}
+
+#chat-box .close:hover {
+    color: #487eb0;
+}
+
+#chat-box {
+    border-radius: 5px;
+    position: fixed;
+    width: 350px;
+    top: 6%;
+    /* top: -58%; */
+    left: 70%;
+    z-index: 10;
+    /* display: none; */
+    background: #f7f7f7;
+}
+
+#chat-box .contact {
+    margin-top: 10px;
+}
+
+#chat-box .contact .pic {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+/* #chat-box .contact .seen {
+  font-size: 0.9rem;
+  color: #999;
+} */
+
+#chat-box .contact .name {
+    width: calc(100% - 105px);
+    font-weight: 500;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#chat-box .message-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-box .messages {
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-box .send-chat {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: #01c5c4;
+    border-radius: 3px;
+}
+
+#chat-box .send-chat:hover {
+    color: #fff;
+}
+
+
+/* #chat-box .messages .time {
+  font-size: 0.8rem;
+  background: #eee;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  color: #999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+} */
+
+#chat-box .messages .message {
+    padding: 5px;
+    /* margin: 1rem; */
+    background: #fff;
+    border-radius: 1.125rem 1.125rem 1.125rem 0;
+    width: fit-content;
+    /* width: -webkit-fit-content; */
+    /* width: -moz-fit-content; */
+    max-width: 66%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.075), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.message .message-info {
+    margin-bottom: 7px;
+}
+
+.message .message-name {
+    margin-right: 10px;
+}
+
+#chat-box .messages .message.stark {
+    background-color: #e4e6eb;
+}
+
+#chat-box .messages .message.parker {
+    margin: 0rem 1rem 20px auto;
+    margin-right: 1rem;
+    border-radius: 1.125rem 1.125rem 0 1.125rem;
+    color: #e4e6eb;
+    background: #0084ff;
+}
+
+#chat-box textarea {
+    /* width: 70%;
+    margin: 0 auto; */
+    vertical-align: bottom;
+}
+
+#send-chat {
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: none;
+    background: linear-gradient(to right top, #6f96f3, #164ed2);
+}
+
+#chat-box .input {
+    padding: 10px 10px;
+    /* margin-bottom: 10px; */
+}
+
+
+/* ===================Section========================== */
+
+.section .section-title {
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: sub;
+}
+
+.section .section-head {
+    margin-bottom: 10px;
+}
+
+.section .section-add,
+.section .section-list {
+    margin-left: 10px;
+    color: #000;
+}
+
+.section .section-detail form {
+    margin-bottom: 10px;
+}
+
+
+/* ============List user=============== */
+
+.section.list-user .btn-edit {
+    display: inline-block;
+    color: #212121;
+}
+
+.section.list-user .btn-delete,
+.section.list-user .btn-restore {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+/* ==============Inventory============== */
+
+.section.add-inventory .criteria {
+    margin-bottom: 10px;
+}
+
+
+/* =============Add post=============== */
+
+.section.add-post input[name='thumb'],
+.section.add-user input[name='avatar'] {
+    margin-bottom: 10px;
+}
+
+#search-wp {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#hint-search {
+    position: absolute;
+    width: 500px;
+    /* bottom: -70px; */
+    left: 0;
+    z-index: 5;
+    display: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#list-hint-search {
+    list-style: none;
+}
+
+#list-hint-search li {
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#list-hint-search li img {
+    width: 50px;
+    display: inline-block;
+}
+
+#list-hint-search li p {
+    display: inline-block;
+}
+
+#hint-search li:hover {
+    background-color: #dfe4ea;
+    cursor: pointer;
+}
+
+#preview-product {
+    /* margin-top: 10px;
+    margin-left: 10px; */
+}
+
+
+/* ================Add discount code=============== */
+
+.section.add-discount-code input[name='amount'],
+.section.delete-old-cart select[name='days'],
+.section.add-discount-code input[name='expiry'],
+.section.add-discount-code select[name='type'],
+.section.add-discount-code select[name='letter'] {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.section.add-discount-code .hint {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* ==================Notify stock================== */
+
+.section.notify-stock button {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.section.notify-stock button[data-action='single'] {
+    background-color: #373a40;
+}
+
+.section.notify-stock button[data-action='bulk'] {
+    background-color: #1a1c20;
+}
+
+.section.list-posts-for-product .btn-live {
+    outline: none;
+    border: none;
+    background-color: #f6f5f5;
+}
+
+.section.list-posts-for-product .btn-delete {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.message .remove-chat {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.message .remove-chat i {
+    color: #f1f6f9;
+}
+
+
+/* ================== */
+
+#list-related-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-related-product li {
+    width: 20%;
+    position: relative;
+}
+
+#list-related-product .delete-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#list-related-product .delete-item i {
+    font-size: 20px;
+    color: #060930;
+}
+
+#list-related-product .delete-item:hover i {
+    cursor: pointer;
+    color: #ffa62b;
+}
+
+
+/* ================= */
+
+.section.list-relate-product img {
+    display: inline-block;
+}
+
+.section.list-relate-product .list-related-by-product {
+    display: flex;
+}

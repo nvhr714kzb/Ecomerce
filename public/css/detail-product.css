@@ -1,0 +1,499 @@
+/* ==================================Breadcrumb================== */
+
+#content-left {
+    width: 75%;
+}
+
+#content-right {
+    width: 25%;
+}
+
+ul.beadcrumb li {
+    display: inline-block;
+}
+
+ul.beadcrumb li a {
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 5px;
+}
+
+
+/* ================================== */
+
+#detail-product-head {
+    padding: 20px;
+    /* background: linear-gradient(45deg, #fafafa, #b3d7e7); */
+}
+
+#thumb-wp {
+    margin-bottom: 30px;
+}
+
+#detail-product-head #thumb {
+    float: left;
+    width: 40%;
+    position: relative;
+    margin-right: 50px;
+}
+
+#detail-product-body .section-detail a {
+    display: inline;
+}
+
+#detail-product-body .section-detail h2,
+#detail-product-body .section-detail h3 {
+    display: block;
+    overflow: hidden;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+article p {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+article h2,
+article h3 {
+    display: block;
+    overflow: hidden;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+#info {
+    float: left;
+    width: 50%;
+}
+
+#my-img {
+    width: 350px;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+#my-result {
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    top: 0;
+    right: -400px;
+    visibility: hidden;
+}
+
+#thumb .img-zoom-lens {
+    position: absolute;
+    width: 116.66px;
+    height: 150px;
+}
+
+#thumb .img-zoom-lens:hover {
+    cursor: pointer;
+    border: 1px solid #d4d4d4;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#thumb .img-zoom-lens:hover~#my-result {
+    visibility: visible;
+}
+
+
+/* ===============List thumb================= */
+
+#list-thumb {
+    display: flex;
+    justify-content: left;
+}
+
+#list-thumb li {
+    flex-basis: 20%;
+    border: 1px solid gray;
+}
+
+#list-thumb li:not(:last-child) {
+    margin-right: 15px;
+}
+
+#list-thumb li.active {
+    border-color: transparent;
+    box-shadow: rgb(241, 196, 15) 0px 0px 2px 2px;
+}
+
+
+/* =============================Detail product body==================== */
+
+#detail-product-body .section-detail {
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+#detail-product-body .section-detail.more {
+    max-height: none;
+}
+
+
+/* ======================RIGHT=========================== */
+
+#info div {
+    margin-bottom: 10px;
+}
+
+.box.product-name .box-detail {
+    font-size: 12px;
+    font-weight: 100;
+    color: #333;
+}
+
+.box.product-name .box-detail h1 {
+    margin: 0;
+}
+
+.box .box-title {
+    width: 80px;
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.box.product-price .price {
+    font-size: 24px;
+    color: #e10c00;
+}
+
+.box.product-price .old-price {
+    text-decoration: line-through;
+    font-size: 17px;
+    color: #808080;
+    margin-left: 10px;
+}
+
+.box.storage span {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #dadada;
+    cursor: pointer;
+}
+
+.box.storage span:hover {
+    border: 1px solid orange;
+}
+
+.box.color span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#info .box-title,
+#info .box-content {
+    display: inline-block;
+}
+
+#minus,
+#plus,
+#num-cart {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+#num-cart {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#minus,
+#plus {
+    background-color: #afb1b9;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+#minus:active,
+#plus:active {
+    background-color: #1d1e1f !important;
+}
+
+#minus:hover,
+#plus:hover {
+    color: #eff0f5;
+    background-color: rgb(100, 98, 98);
+}
+
+
+/*   -----------------------------cart------------------------ */
+
+#add-cart,
+#add-wishlist {
+    padding: 8px 15px;
+    font-size: 17px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+}
+
+#add-cart:hover:enabled,
+#add-wishlist:hover:enabled {
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+#add-cart {
+    margin-right: 20px;
+    background: #2962ff;
+}
+
+#add-wishlist {
+    background-color: #ffb916;
+    font-size: 16px;
+}
+
+input:disabled,
+button:disabled {
+    background-color: grey !important;
+}
+
+
+/* ==========================================DESC================================= */
+
+#post-product-wp .section-detail img {
+    width: 100%;
+}
+
+
+/* ==================review=================== */
+
+#review-form {
+    padding: 0 0 15px 0;
+}
+
+#review-form .star {
+    font-size: 20px;
+    color: #ccc;
+}
+
+#review-form .star input[type="radio"] {
+    display: none;
+}
+
+#analysis-rating .bg {
+    width: 35%;
+    background-color: #e9e9e9;
+    height: 15px;
+    display: inline-block;
+    margin: 0 10px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+#analysis-rating h3 {
+    margin-bottom: 0;
+}
+
+#analysis-rating .star {
+    font-size: 20px;
+}
+
+#analysis-rating .bg .bg-in {
+    background: #fb0;
+    background: -webkit-linear-gradient(top, #ffce00, #ffa700);
+    background: linear-gradient(to bottom, #ffce00, #ffa700);
+    background-color: #ffce00;
+    height: 15px;
+    max-width: 100%;
+}
+
+
+/* ============================REview============= */
+
+input[name="submitAddReview"] {
+    padding: 6px 0;
+    width: 300px;
+    background: #e7e9ec;
+    border-radius: 3px;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #111;
+}
+
+input[name="submitAddReview"]:hover {
+    background-color: #d9d9d9;
+}
+
+.review-date {
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#review-content {
+    resize: none;
+    width: 100%;
+    border: 1px solid #bfbfbf;
+}
+
+#review-content:focus {
+    outline: none;
+    border: 1px solid #8c8c8c;
+}
+
+#add-review input[type="submit"] {
+    display: block;
+}
+
+#review h2,
+#add-review h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#review .review-date {
+    font-size: 12px;
+    color: #999;
+}
+
+#review .review-content {
+    font-size: 14px;
+}
+
+
+/* ===========================stock==================== */
+
+#out-of-stock {
+    padding: 10px;
+    background-color: #dfe6e9;
+}
+
+#out-of-stock input {
+    width: 100%;
+    display: block;
+}
+
+#out-of-stock input[type="submit"] {
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    background-color: #eb2f06;
+}
+
+#out-of-stock input[type="submit"]:hover {
+    color: #fff;
+}
+
+#out-of-stock input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+/* =======================table================ */
+
+.parameter li {
+    display: table;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.parameter li span {
+    display: table-cell;
+    width: 40%;
+    vertical-align: top;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.parameter li div {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+    padding: 6px 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* ====================Attr================= */
+
+.attrInput {
+    display: none;
+}
+
+label.attr {
+    font-size: 12px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a2a6ac;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label.attrColor[color='White'] {
+    background-color: #f6f5f5;
+}
+
+label.attrColor[color='Red'] {
+    background-color: #ec0101;
+}
+
+label.attrColor[color='Yellow'] {
+    background-color: #f0a500;
+}
+
+label.attrColor[color='Black'] {
+    color: #f6f5f5;
+    background-color: #1a1c20;
+}
+
+label.attrColor[color='Blue'] {
+    color: #f6f5f5;
+    background-color: #28abb9;
+}
+
+label.attr:not(:last-child) {
+    margin-right: 10px;
+}
+
+.view-more {
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #288ad6;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}

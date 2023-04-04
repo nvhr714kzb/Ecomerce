@@ -1,0 +1,221 @@
+ /* .list-product li::before {
+     position: absolute;
+     content: '';
+     left: 0px;
+     top: 0;
+     width: 0;
+     height: 0;
+     border-top: 2px solid orange;
+     border-left: 2px solid orange;
+     transition: all 0.5s;
+ }
+ 
+ .list-product li::after {
+     position: absolute;
+     content: '';
+     right: 0px;
+     bottom: 0;
+     width: 0;
+     height: 0;
+     border-bottom: 2px solid orange;
+     border-right: 2px solid orange;
+     transition: all 0.5s;
+ }
+ 
+ .list-product li:hover:before {
+     width: 100%;
+     height: 100%;
+     z-index: -10;
+ }
+ 
+ .list-product li:hover::after {
+     width: 100%;
+     height: 100%;
+     z-index: -10;
+ } */
+ /* =====================FILTER====================== */
+ 
+ #filter-product .box {
+     padding: 10px 0;
+ }
+ 
+ #filter-product .box:not(:last-child) {
+     border-bottom: 1px solid #ececec;
+ }
+ 
+ #filter-product h5 {
+     font-size: 14px;
+     color: #212121;
+ }
+ 
+ #filter-product label {
+     font-weight: 500;
+     font-size: 13px;
+     color: #757575;
+     line-height: 18px;
+ }
+ 
+ .rating label {
+     cursor: pointer;
+ }
+ 
+ .rating label:hover {
+     background-color: #eeeeee;
+ }
+ 
+ .rating span {
+     font-size: 18px;
+ }
+ 
+ .rating span:not(:last-child) {
+     margin-right: 5px;
+ }
+ 
+ input[type="checkbox"].common-selector {
+     margin-right: 5px;
+ }
+ /* ========================FILTER======================= */
+ 
+ #list-product-wp {
+     width: 80%;
+ }
+ 
+ #filter-product {
+     width: 20%;
+ }
+ 
+ .list-product a {
+     text-decoration: none;
+ }
+ 
+ .list-product .item:hover h3 {
+     color: #28abb9;
+ }
+ 
+ .list-product .item:hover a {
+     text-decoration: none;
+ }
+ 
+ .list-product .item img {
+     width: auto;
+ }
+ 
+ .list-product {
+     display: flex;
+     flex-wrap: wrap;
+     text-align: left;
+ }
+ 
+ .list-product .item {
+     width: 25%;
+     padding: 0 15px;
+     border-right: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+ }
+ 
+ .list-product .item h3 {
+     font-size: 16px;
+     text-align: center;
+     color: #333;
+     margin-bottom: 10px;
+ }
+ 
+ .list-product .item img {
+     width: 180px;
+     margin: 15px auto;
+     transition: all 0.2s;
+ }
+ 
+ .list-product .item:hover img {
+     transform: translateY(-10px);
+ }
+ 
+ .list-product .item .stock {
+     font-size: 13px;
+     color: #000000;
+ }
+ 
+ .list-product .item .new-price {
+     font-size: 15px;
+     color: #e10c00;
+ }
+ 
+ .list-product .item .old-price {
+     margin-left: 5px;
+     text-decoration: line-through;
+     font-size: 12px;
+ }
+ 
+ .list-product .item .promo {
+     font-size: 13px;
+     color: #333;
+     line-height: 1.4;
+ }
+ 
+ .list-product .item .price {
+     margin-bottom: 10px;
+ }
+ 
+ .list-product .item .discount {
+     padding: 5px 10px;
+     position: absolute;
+     top: 170px;
+     left: 10px;
+     color: #fff;
+     background-image: linear-gradient(-90deg, #ec1f1f 0%, #ff9c00 100%);
+     border-radius: 10px;
+     font-size: 12px;
+ }
+ /* -----------------List product slider--------------------- */
+ 
+ .list-product.slider {
+     display: block !important;
+ }
+ 
+ .list-product.slider .item {
+     width: auto !important;
+ }
+ /* ============================rating================================== */
+ 
+ .list-star {
+     display: inline-block;
+     margin-bottom: 0;
+ }
+ 
+ .list-star li {
+     display: inline-block;
+     font-size: 20px;
+ }
+ 
+ .rating .num-rating {
+     font-size: 15px;
+     color: #9e9e9e;
+ }
+ 
+ .rating .num-star {
+     display: none;
+ }
+ /* ============================Icon============================ */
+ 
+ .section .list-product .icon {
+     position: absolute;
+     top: 0;
+     left: 15px;
+     width: 35px;
+ }
+ 
+ .section#discount-product-wp .list-product .icon {
+     width: 40px;
+ }
+ 
+ .section#featured-product-wp .list-product .icon {
+     font-size: 25px;
+ }
+ 
+ .section#most-order-product-wp .list-product .icon {
+     color: #db6400;
+     font-size: 25px;
+ }

@@ -1,0 +1,90 @@
+#content.order-history {
+    min-height: 300px;
+}
+
+.section.order-history .empty-order-history p {
+    font-size: 20px;
+}
+
+.list-order-history {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-order-history .order-id {
+    padding: 10px 0;
+    border-bottom: 1px solid #bbbfca;
+    margin: 0 -10px;
+    margin-bottom: 10px;
+    color: #1f6f8b;
+}
+
+.list-order-history li {
+    width: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.list-order-history li img {
+    width: 15%;
+}
+
+.list-order-history li .more-info h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.list-order-history li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.list-order-history .total {
+    color: #ec0101;
+}
+
+.list-order-history .date {
+    color: #7e8a97;
+    margin-bottom: 10px;
+}
+
+.status-order {
+    color: #28df99;
+}
+
+
+/* =====================Order content===================== */
+
+.order-content .back-to-order {
+    padding: 10px 0;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #3797a4;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.order-content .back-to-order:hover {
+    background-color: #1f6f8b;
+}
+
+.order-content table,
+#receipt-info {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#receipt-info h3 {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 20px;
+    color: #000;
+}
+
+.order-content table td {
+    padding: 10px;
+}

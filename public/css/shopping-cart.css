@@ -1,0 +1,75 @@
+#content.shopping-cart.empty-carttotal-after {
+    min-height: 400px;
+    text-align: center;
+}
+
+#content.shopping-cart.empty-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#content.shopping-cart.empty-cart img {
+    display: inline-block;
+    width: 80px;
+}
+
+.shopping-cart table {
+    width: 100%;
+}
+
+.shopping-cart table th {
+    background-color: #ffd814;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.shopping-cart table td {
+    padding: 10px 0;
+}
+
+
+/* .shopping-cart table tbody td {
+    text-align: center;
+} */
+
+.shopping-cart table img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.shopping-cart input[type="number"] {
+    width: 70px;
+}
+
+.shopping-cart input[name='discountCode'] {
+    border: 1px solid gray;
+    outline: none;
+    width: 300px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.shopping-cart input[name='discountCode']:focus {
+    box-shadow: 0px 0px 2px 2px #f1c40f;
+    border: 1px solid transparent;
+}
+
+.shopping-cart table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+}
+
+.shopping-cart table tr.error td {
+    color: #ec0101;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#total-after {
+    color: black;
+    font-size: 18px;
+}

@@ -1,0 +1,20 @@
+/* ==================CONTENT================ */
+
+#support #list-support {
+    display: flex;
+}
+
+#support #list-support .item-support {
+    flex-basis: 20%;
+    padding: 20px;
+}
+
+#support #list-support .item-support .thumb {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#support #list-support .item-support .title,
+#support #list-support .item-support .desc {
+    text-align: center;
+}

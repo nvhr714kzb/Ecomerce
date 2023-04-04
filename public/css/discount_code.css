@@ -1,0 +1,64 @@
+#content.discount-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.section.discount-code .section-head h1 {
+    display: block;
+    overflow: hidden;
+    line-height: 53px;
+    font-size: 40px;
+    color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#list-code {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#list-code .item {
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#list-code .item div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#list-code .item .short-name {
+    height: 120px;
+    background-color: #f1d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #ec0101;
+    border: 1px dashed #e6739f;
+}
+
+#list-code .item .code-icon {
+    background-color: #1f3c88;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+#list-code .item .code-text {
+    line-height: 34px;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: bold;
+    border: 1px dashed #cccccc;
+    width: calc(100% - 35px);
+}

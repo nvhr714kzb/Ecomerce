@@ -1,0 +1,1203 @@
+/* **********************AUTHOR******************* */
+
+html {
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px !important;
+    margin: 0 auto;
+}
+
+
+/* ===============================INPUT=================== */
+
+div.error {
+    color: #e84118;
+    font-size: 13px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.help-block {
+    color: #e84118;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.control-label {
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+}
+
+
+/* ======================HEADER=================== */
+
+
+/*            ----------Header top-------- */
+
+#header-wp {
+    background-color: #000;
+    margin-bottom: 30px;
+}
+
+#header-top {}
+
+#header-body {
+    padding: 5px 0px;
+}
+
+#header-body .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-body a img {
+    width: 100px;
+}
+
+
+/* ----------------------Header bottom------------------------- */
+
+#header-bottom {
+    background-color: #fed700;
+}
+
+nav a {
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    white-space: nowrap;
+    color: #000;
+    text-transform: none;
+    font-size: 14px;
+}
+
+nav a i {
+    font-size: 25px;
+}
+
+nav a:hover {
+    background-color: cornsilk;
+    text-decoration: none;
+    color: #000;
+}
+
+#logo {
+    float: left;
+}
+
+#main-menu {
+    float: right;
+    margin: 0;
+}
+
+#main-menu>li.selected {
+    background-color: yellow;
+}
+
+#main-menu>li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#main-menu>li>a {
+    /* padding: 10px 20px; */
+    /* canh giua cach moi */
+    width: 130px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    transition: 0.3s;
+    /* ---Hieu dung 1 */
+    /* overflow: hidden; */
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #003); */
+    /* filter: hue-rotate(115deg); */
+}
+
+#main-menu>li>a:hover {
+    transition-delay: 0.1s;
+    background-color: #21ebff;
+    color: #fff;
+    box-shadow: 0px 0px 50px #21ebff;
+    text-decoration: none;
+}
+
+
+/* ----------------------HIEU UNG 1----------------- */
+
+
+/* #main-menu > li > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+} */
+
+
+/* #main-menu > li > a:hover::before {
+  width: 100%;
+  height: 100%;
+} */
+
+
+/* 
+#main-menu > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #21ebff;
+  border-right: 2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+} */
+
+
+/* #main-menu > li > a:hover::after {
+  width: 100%;
+  height: 100%;
+} */
+
+
+/* ----------------------HIEU UNG 2----------------- */
+
+
+/* ul#main-menu li:first-child a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-image: url(../images/btn-bg1.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+ul#main-menu li:first-child a:hover::before {
+    width: 100%;
+}
+
+ul#main-menu li:nth-child(2) a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-image: url(../images/btn-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    transform-origin: left;
+    transition: 0.5s;
+} */
+
+
+/* ul#main-menu li:nth-child(2) a:hover::before {
+    width: 100%;
+} */
+
+
+/* de tang z-index cho button trang bi before de */
+
+
+/* ul#main-menu li a span {
+    position: relative;
+    z-index: 5;
+} */
+
+.drop-down:hover>.drop-down-menu {
+    /* display: block; */
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down-menu {
+    position: absolute;
+    top: 40px !important;
+    left: -10px !important;
+    padding: 10px 10px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 20;
+    display: none;
+}
+
+
+/* .drop-down-menu::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 93px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: red;
+} */
+
+.drop-down-menu li a {
+    padding: 5px 0;
+    color: black;
+    display: inline-block !important;
+}
+
+.drop-down-menu li:hover {
+    cursor: pointer;
+    background-color: #e0ece4;
+}
+
+.drop-down-menu li:hover a {
+    text-decoration: none;
+}
+
+.drop-down-menu.drop-down-message {
+    overflow-y: scroll;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+    max-height: 500px;
+}
+
+.drop-down-menu.drop-down-message li img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.drop-down-menu.drop-down-message li p {
+    display: -webkit-box;
+    line-height: 16px;
+    /* Fallback  */
+    max-height: 56px;
+    /* Fallback số dòng bạn muốn giới hạn */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    visibility: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 61px);
+    margin-bottom: 0;
+}
+
+
+/* =========================SLIDER============================== */
+
+#home-banner {
+    width: 70%;
+}
+
+figure {
+    border-bottom: 1px solid #efefef;
+    background: #fff;
+    margin-bottom: 7px !important;
+}
+
+#home-news {
+    width: 30%;
+}
+
+#home-news h2 {
+    padding: 10px 20px 10px 10px;
+    background: #fdd504;
+    line-height: 1.3em;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+#home-news h2:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 12px solid #fff;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* ===============================List menu============================== */
+
+#list-menu {
+    float: right;
+}
+
+#list-menu>li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered;
+}
+
+#list-menu ul {
+    position: absolute;
+    top: 40px;
+    border-top: 3px solid red;
+    width: 100px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+#list-menu ul li {
+    background-color: yellow;
+}
+
+#list-menu li:hover>ul {
+    top: 30px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s linear;
+}
+
+#list-menu ul ul {
+    left: 104px;
+    top: 50px;
+}
+
+
+/*            ----------Header body-------- */
+
+#box-message i {
+    /* position: absolute;
+  top: 9px;
+  left: 80px; */
+    color: #fff;
+    font-size: 22px;
+}
+
+#count-unseen {
+    position: absolute;
+    top: 2px;
+    left: 78px;
+    background-color: #ec0101;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+/*                   -------------------Cart-------------- */
+
+#cart-wp {
+    float: right;
+}
+
+#cart-wp a {
+    display: inline-block;
+}
+
+#btn-cart {
+    position: relative;
+}
+
+#count-cart {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    color: #fff;
+}
+
+#wish-list {
+    color: white;
+    padding: 5px 10px;
+}
+
+#wish-list:hover {
+    text-decoration: none;
+    color: #ff9642;
+}
+
+
+/* bi loi do the span keo dai do display flex */
+
+#btn-cart .cart {
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 40px;
+    border-radius: 10%;
+    color: #fff;
+}
+
+#btn-cart:hover .cart {
+    border: solid 1px #fff;
+}
+
+
+/* ========================Header bottom==================== */
+
+#list-category {
+    display: flex;
+}
+
+
+/*                   -------------------Search-------------- */
+
+#search-wp {
+    text-align: center;
+    position: relative;
+}
+
+#hint-search {
+    position: absolute;
+    width: 500px;
+    /* bottom: -70px; */
+    left: 0;
+    z-index: 5;
+    display: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#hint-search li {
+    border-bottom: 1px solid #dddddd;
+}
+
+#hint-search li:hover {
+    cursor: pointer;
+}
+
+#s {
+    width: 500px;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#s:focus {
+    box-shadow: 0px 0px 2px 2px #f1c40f;
+}
+
+#sm-s {
+    position: relative;
+    left: -53px;
+    padding: 9.8px 16px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f9ca24;
+    top: 0.6px;
+}
+
+#sm-s:hover {
+    background-color: #f39c12;
+}
+
+#sm-s i {
+    font-size: 18px;
+}
+
+#list-hint-search {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#list-hint-search li {
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#list-hint-search li img {
+    width: 50px;
+    display: inline-block;
+}
+
+#list-hint-search li p {
+    display: inline-block;
+}
+
+
+/* ====================CONTENT================= */
+
+#content-wp {
+    margin-bottom: 30px;
+}
+
+#content-wp .container {
+    /* display: flex;
+    justify-content: center; */
+}
+
+#content {
+    /* flex-basis: 50%; */
+    /* float: left;
+    width: 80%; */
+}
+
+#content.empty-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+#content.empty-product div i {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #ec0101;
+}
+
+#content.home {}
+
+#sidebar-wp {
+    /* flex-basis: 50%; */
+    float: left;
+    width: 20%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section .section-head {
+    padding: 10px 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.section .section-head h2 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.section .section-title {}
+
+
+/*          -------------------Section sale----------------- */
+
+#binh {
+    display: flex;
+    justify-content: space-between;
+}
+
+#binh .box {
+    position: relative;
+    flex-basis: 30%;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+#binh .box .img-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%;
+    height: 100%; */
+}
+
+#binh .box .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+#binh .box:hover .img-box img {
+    opacity: 0;
+}
+
+#binh .box .content {
+    position: absolute;
+    overflow: hidden;
+    left: 10%;
+    bottom: 20px;
+    width: 80%;
+    height: 60px;
+    transition: 0.5s;
+    padding: 15px;
+    background-image: linear-gradient( to bottom right, rgb(235, 238, 175), rgb(240, 240, 93));
+    border-radius: 5px;
+}
+
+#binh .box:hover .content {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#binh .box .content p {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#binh .box:hover .content p {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+#binh .box .content .title {
+    text-align: center;
+}
+
+
+/* ====================================Best sale racket=========================== */
+
+
+/* ==================================SIDEBAR================== */
+
+#sidebar-wp {
+    padding: 0 10px;
+}
+
+
+/* =====================FOOTER==================== */
+
+#footer-wp {
+    /* background-color: #232f3e; */
+    position: relative;
+    background-color: #000;
+}
+
+#footer-body {
+    padding: 20px 0;
+}
+
+#footer-wp #footer-body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    /* =================================================Xem lai z-index: =====================; */
+    background-image: url(../images/wave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#footer-body .block {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 20px;
+}
+
+#footer-body .block li {
+    padding: 5px 0;
+}
+
+#footer-body .block li a {
+    color: white;
+}
+
+#footer-body .block .title {
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#footer-body .block.about .list-item i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+#footer-bot {
+    padding: 10px 0;
+}
+
+
+/*                  -----------Form reg email------------- */
+
+#desc {
+    color: white;
+}
+
+#sm-reg,
+#emailNews {
+    width: 100%;
+}
+
+#emailNews {
+    margin-bottom: 20px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+#sm-reg {
+    background-color: #131921;
+    color: white;
+    padding: 8px;
+    outline: none;
+    border: none;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#sm-reg:hover {
+    background-color: orange;
+}
+
+#sm-reg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+}
+
+#sm-reg:hover::before {
+    left: 100%;
+    transition: 0.5s;
+}
+
+
+/* ==============Social================= */
+
+#social {
+    margin-bottom: 30px;
+}
+
+#social #social-title {
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 25px;
+}
+
+#social #list-social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#social #list-social li {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 0 13px;
+    border-radius: 5px;
+}
+
+#social #list-social li span {
+    /* de xep chong len nhau */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 2555, 255, 0.2);
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgba(14, 2, 56, 0.05), 5px 5px 10px rgba(4, 13, 53, 0.5);
+}
+
+
+/* =================MAU sac duong vien cho cac item=========== */
+
+#list-social li:first-child span {
+    border: 2px solid #3b5999;
+    color: #3b5999;
+}
+
+#list-social li:nth-child(2) span {
+    border: 2px solid #55acee;
+    color: #55acee;
+}
+
+#list-social li:nth-child(3) span {
+    border: 2px solid #25d366;
+    color: #25d366;
+}
+
+#list-social li:nth-child(4) span {
+    border: 2px solid #0077b5;
+    color: #0077b5;
+}
+
+#list-social li:last-child span {
+    border: 2px solid #e4405f;
+    color: #e4405f;
+}
+
+#list-social li:hover span {
+    transition: 0.5s;
+    color: #fff;
+}
+
+
+/* thay doi vi tri cua cac the span */
+
+#list-social li:hover span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+}
+
+#list-social li:hover span:nth-child(4) {
+    transform: translate(15px, -15px);
+    opacity: 0.8;
+}
+
+#list-social li:hover span:nth-child(3) {
+    transform: translate(10px, -10px);
+    opacity: 0.6;
+}
+
+#list-social li:hover span:nth-child(2) {
+    transform: translate(5px, -5px);
+    opacity: 0.4;
+}
+
+#list-social li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+    opacity: 0.2;
+}
+
+
+/* thay doi mau tung phan tu */
+
+#list-social li:nth-child(1):hover span {
+    background: #3b5999;
+}
+
+#list-social li:nth-child(2):hover span {
+    background: #55acee;
+}
+
+#list-social li:nth-child(3):hover span {
+    background: #25d366;
+}
+
+#list-social li:nth-child(4):hover span {
+    background: #0077b5;
+}
+
+#list-social li:nth-child(5):hover span {
+    background: #e4405f;
+}
+
+
+/* =====================CREDIT CART================ */
+
+#creadit-accept {
+    /* de tang index */
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+#creadit-accept ul {
+    display: flex;
+    justify-content: center;
+}
+
+#creadit-accept ul li {
+    margin: 0px 10px;
+}
+
+
+/* ======================Copytright================== */
+
+#copyright {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+.no-product {
+    height: 500px;
+}
+
+.no-product .title {
+    margin-bottom: 15px;
+}
+
+
+/* ==========================Chat========================= */
+
+
+/* ====================HELP================ */
+
+#chat-box {
+    border-radius: 5px;
+    position: fixed;
+    width: 350px;
+    top: 16%;
+    /* top: -58%; */
+    left: 73%;
+    z-index: 10;
+    /* display: none; */
+    background: #f7f7f7;
+}
+
+.start-chat {
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    z-index: 5;
+    border: none;
+    outline: none;
+    background-color: #f8d406;
+    color: #000;
+    font-size: 15px;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+
+.start-chat i {
+    margin-right: 5px;
+    font-size: 25px;
+    color: #000;
+    vertical-align: middle;
+}
+
+#count-unseen-message {
+    position: absolute;
+    top: -7px;
+    left: 43px;
+    color: #fff;
+    /* =========== */
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.start-chat:hover {
+    background-color: #ffa62b;
+    outline: none;
+}
+
+#chat-box .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: #0097e6;
+    background-color: none;
+}
+
+#chat-box .contact {
+    margin-top: 10px;
+}
+
+#chat-box .close:hover {
+    color: #487eb0;
+}
+
+#chat-box .contact .pic {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+/* #chat-box .contact .seen {
+  font-size: 0.9rem;
+  color: #999;
+} */
+
+#chat-box .contact .name {
+    width: calc(100% - 105px);
+    font-weight: 500;
+    text-overflow: Ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#chat-box .message-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-box .messages {
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-box .send-chat {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: #01c5c4;
+    border-radius: 3px;
+}
+
+#chat-box .send-chat:hover {
+    color: #fff;
+}
+
+
+/* #chat-box .messages .time {
+  font-size: 0.8rem;
+  background: #eee;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  color: #999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+} */
+
+#chat-box .messages .message {
+    padding: 5px;
+    /* margin: 1rem; */
+    background: #fff;
+    border-radius: 1.125rem 1.125rem 1.125rem 0;
+    width: fit-content;
+    /* width: -webkit-fit-content; */
+    /* width: -moz-fit-content; */
+    max-width: 66%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.075), 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.message .message-info {
+    margin-bottom: 7px;
+}
+
+.message .message-name {
+    margin-right: 10px;
+}
+
+#chat-box .messages .message.stark {
+    background-color: #e4e6eb;
+}
+
+#chat-box .messages .message.parker {
+    margin: 0rem 1rem 20px auto;
+    margin-right: 1rem;
+    border-radius: 1.125rem 1.125rem 0 1.125rem;
+    color: #e4e6eb;
+    background: #0084ff;
+}
+
+#chat-box textarea {
+    /* width: 70%;
+    margin: 0 auto; */
+    vertical-align: bottom;
+}
+
+#send-chat {
+    border-radius: 5px;
+    padding: 3px 10px;
+    border: none;
+    background: linear-gradient(to right top, #6f96f3, #164ed2);
+    margin-bottom: 10px;
+}
+
+#chat-box .input {
+    padding: 10px 10px;
+    /* margin-bottom: 10px; */
+}
+
+.message .remove-chat {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.message .remove-chat i {
+    color: #f1f6f9;
+}
+
+
+/* ===========ResetPassword================ */
+
+#reset-password,
+#change-password {
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+#reset-password h3,
+#change-password h3 {
+    font-family: "Amazon Ember", Arial, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #131921;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.btn-yellow {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+    border-color: #D5D9D9;
+    border-style: solid;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    background-color: #ffd814;
+    display: inline-block;
+    color: #000;
+}
+
+.btn-yellow:hover {
+    background-color: #f6830f;
+    text-decoration: none;
+    color: #000;
+}
